@@ -9,7 +9,10 @@
     <a href="https://github.com/GeopJr/MarketVSX/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=for-the-badge&labelColor=f8eae3" alt="COC" /></a>
     <a href="https://github.com/GeopJr/MarketVSX/blob/main/LICENSE"><img src="https://img.shields.io/badge/LICENSE-AGPL--3.0-000000.svg?style=for-the-badge&labelColor=f8eae3" alt="AGPL-3.0" /></a>
 </p>
-
+<p align="center">
+  <br />
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/marketvsx/"><img src="https://i.imgur.com/UkbNoME.png" alt="firefox addon" /></a>
+</p>
 
 # 
 
@@ -54,8 +57,3 @@ Chrome also refuses to use svgs as icons, so there are multiple pngs for it.
 Lastly, sometimes chrome had problems with the `readystatechange` event so user might need to refresh. (If users report it, I'll switch to another event / find a solution)
 
 #
-
-## Download
-
-- Firefox: 
-- Chrome: 
