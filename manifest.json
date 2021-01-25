@@ -2,9 +2,9 @@
 
   "manifest_version": 2,
   "name": "MarketVSX",
-  "version": "1.0",
+  "version": "1.1",
 
-  "description": "Creates a bridge between vscode marketplace and open-vsx.",
+  "description": "A bridge between vscode marketplace and open-vsx.",
   "author": "GeopJr",
   "homepage_url": "https://github.com/GeopJr/MarketVSX/",
 
@@ -19,7 +19,8 @@
   "content_scripts": [
     {
       "matches": ["*://marketplace.visualstudio.com/*"],
-      "js": ["marketvsx.js"]
+      "js": ["marketvsx.js"],
+      "run_at": "document_end"
     }
   ],
   "background": {

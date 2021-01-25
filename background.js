@@ -1,8 +1,5 @@
+const browser = window.browser? window.browser : window.chrome;
 browser.runtime.onMessage.addListener(notify);
-
-function onError(error) {
-    console.error(`Error: ${error}`);
-  }
 
 function notify(message) {
     const xhr = new XMLHttpRequest();
@@ -18,7 +15,7 @@ function notify(message) {
             browser.tabs.sendMessage(
                 tabs[0].id,
                 {exists: exists}
-              ).catch(onError);
+            )
         })
        
     };
