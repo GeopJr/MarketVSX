@@ -1,4 +1,4 @@
-const browser = window.browser? window.browser : window.chrome;
+const browserApi = window.chrome ? window.chrome : browser;
 
 const params = new URLSearchParams(window.location.search.toLowerCase())
 const packageID = params.get("itemname")
@@ -37,9 +37,9 @@ if (packageID) {
     }
   }
 
-  browser.runtime.sendMessage({ url: openvsxurl })
+  browserApi.runtime.sendMessage({ url: openvsxurl })
 
-  browser.runtime.onMessage.addListener((request) => {
+  browserApi.runtime.onMessage.addListener((request) => {
     if (request.exists) {
       document.getElementById(`${randomID}`).innerHTML = "open-vsx"
       document.getElementById(`${randomID}`).href = openvsxurl.replace(

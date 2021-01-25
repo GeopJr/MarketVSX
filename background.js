@@ -1,4 +1,4 @@
-const browser = window.browser? window.browser : window.chrome;
+const browser = window.browser ? window.browser : window.chrome;
 browser.runtime.onMessage.addListener(notify);
 
 function notify(message) {
