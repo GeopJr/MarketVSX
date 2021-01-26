@@ -12,6 +12,7 @@
 <p align="center">
   <br />
     <a href="https://addons.mozilla.org/en-US/firefox/addon/marketvsx/"><img src="https://i.imgur.com/UkbNoME.png" alt="firefox addon" /></a>
+    <a href="https://chrome.google.com/webstore/detail/marketvsx/fcoiikfhfempfajefakhkjlkmloihmlp"><img src="https://i.imgur.com/TSTwptM.png" alt="chromium addon" /></a>
 </p>
 
 # 
@@ -48,7 +49,8 @@ Another important thing is when the extension is *not* available on open-vsx, th
 
 ## Chrome please...
 
-As you might have noticed, the source uses the proposed standard, `browser`, which chrome refuses to use. For that there's a tiny crystal script that will automatically replace any needed info to make it chrome compatitable.
+As you might have noticed, the source uses the proposed standard, `browser`, which chrome refuses to use. ~~For that there's a tiny crystal script that will automatically replace any needed info to make it chrome compatitable.~~
+The extension now checks for the browser dynamically, however the crystal script is still needed to enable the icons in chrome.
 
 `$ crystal run chromium.cr`
 
